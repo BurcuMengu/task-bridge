@@ -1,16 +1,54 @@
-# React + Vite
+# Team To-do Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A single-page browser app for team tasks organized by assignee. Data is stored in **localStorage**; no backend is required.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React** 19  
+- **Vite** 8  
+- **ESLint**
 
-## React Compiler
+## Setup and run
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+The dev server is usually available at [http://localhost:5173](http://localhost:5173).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Other commands
+
+| Command | Description |
+|---------|-------------|
+| `npm run build` | Production build to `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint |
+
+## Features
+
+- **New task:** title, assignee, status (To-do / In progress / Done / Blocked), and a **planned date** (English month / day / year pickers).
+- **Task board:** tasks grouped into **day columns** by planned date (horizontal scroll); column headings use `en-US` medium date style.
+- **Status:** change by clicking the badge (no duplicate dropdown next to it).
+- **Notes:** multiple comments per task with edit history (**Previous versions**). Comments are ordered **newest first**.
+- **Search:** filter by task text, assignee, notes, and **dates** (several common formats and month names).
+- **Persistence:** `localStorage` key `todo-assignee-crud` (JSON array).
+
+## Project layout
+
+```
+task-bridge/
+├── index.html
+├── package.json
+├── vite.config.js
+├── src/
+│   ├── App.jsx      # Main app logic and UI
+│   ├── App.css
+│   ├── main.jsx
+│   └── index.css
+└── public/
+```
+
+## License
+
+`package.json` sets `private: true`. Adjust packaging and licensing as needed for your use case.
