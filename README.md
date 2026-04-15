@@ -2,6 +2,8 @@
 
 A single-page browser app for team tasks organized by assignee. Data is stored in **localStorage**; no backend is required.
 
+Live Demo: [https://teamtodotracker.netlify.app/](https://teamtodotracker.netlify.app/)
+
 ## Stack
 
 - **React** 19  
