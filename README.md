@@ -50,9 +50,6 @@ Add your screenshots to `assets/screenshots/` and update filenames if needed.
 ### 4) Team View
 ![Team View](./assets/screenshots/team-view.png)
 
-### 5) Dashboard 2
-![Dashboard 2](./assets/screenshots/dashboard2.png)
-
 ## Project layout
 
 ```
