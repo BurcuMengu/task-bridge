@@ -34,6 +34,25 @@ The dev server is usually available at [http://localhost:5173](http://localhost:
 - **Search:** filter by task text, assignee, notes, and **dates** (several common formats and month names).
 - **Persistence:** `localStorage` key `todo-assignee-crud` (JSON array).
 
+## Screenshots
+
+Add your screenshots to `assets/screenshots/` and update filenames if needed.
+
+### 1) Dashboard
+![Dashboard](./assets/screenshots/dashboard1.png)
+
+### 2) Add Task Modal
+![Add Task Modal](./assets/screenshots/add-task.png)
+
+### 3) Task Detail
+![Task Detail](./assets/screenshots/task-detail.png)
+
+### 4) Team View
+![Team View](./assets/screenshots/team-view.png)
+
+### 5) Mobile View
+![Mobile View](./assets/screenshots/dashboard2.png)
+
 ## Project layout
 
 ```
@@ -41,6 +60,8 @@ task-bridge/
 ├── index.html
 ├── package.json
 ├── vite.config.js
+├── assets/
+│   └── screenshots/ # README images
 ├── src/
 │   ├── App.jsx      # Main app logic and UI
 │   ├── App.css
