@@ -41,7 +41,7 @@ The dev server is usually available at [http://localhost:5173](http://localhost:
 Add your screenshots to `assets/screenshots/` and update filenames if needed.
 
 ### 1) Dashboard
-![Dashboard](./assets/screenshots/dashboard1.png)
+![Dashboard](./assets/screenshots/dashboard.png)
 
 ### 2) Add Task Modal
 ![Add Task Modal](./assets/screenshots/add-task.png)
